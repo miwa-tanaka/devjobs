@@ -31,8 +31,18 @@ jobs:
         with:
           node-version: 16.x
           
-      - name: Install NPM packages
-        run: npm ci
+      - name: Install dependencies
+        run: |
+          if [ -e yarn.lock ]; then
+          yarn install --frozen-lockfile
+          elif [ -e package-lock.json ]; then
+          npm ci
+          else
+          npm i
+          fi
+          
+#       - name: Install NPM packages
+#         run: npm ci
         
       - name: Build Next.js app
         run: npm run build
