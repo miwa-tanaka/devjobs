@@ -16,7 +16,7 @@ function Header () {
               <div className="w-9 h-5 bg-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300
                 dark:peer-focus:ring-violet rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full
                 peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px]
-                after:bg-violet after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4
+                after:bg-violet after:border-gray-300 after:border-violet after:rounded-full after:h-4 after:w-4
                 after:transition-all dark:border-gray-600 peer-checked:bg-white hover:after:bg-light-violet">
               </div>
               {/* <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Small toggle</span> */}
